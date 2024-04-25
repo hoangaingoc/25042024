@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mảng</title>
+</head>
+<body>
+<script>
+    // in ra các phần tử trong mảng
+    let mang = [123, 1234, 222, 333, 9999]
+    // for (let i= 0; i<mang.length; i++){
+    //     document.write(mang[i] + '<hr>')
+    // }
+    // // in ra các phần tử chia hết cho 3 trong mảng
+    // for (let i = 0; i < mang.length; i++){
+    //     if (mang[i] % 3 === 0){
+    //         document.write(mang[i] + '<hr>')
+    //     }
+    // }
+    // // Tính tổng các phần tử trong mảng
+    // let tong = 0
+    // let tich = 1
+    // for (let i = 0; i < mang.length; i++){
+    //     tong += mang[i]
+    //     if (mang[i] % 2 === 0) {
+    //         tich *= mang[i]
+    //     }
+    // }
+    // document.write('Tổng là: '+tong+'<hr>')
+    // document.write('Tích là: '+tich+'<hr>')
+    //
+    // // Đếm các phần tử >1000 trong mảng
+    let count = 0
+    // for (let i = 0; i < mang.length; i ++){
+    //     if (mang[i] > 1000){
+    //         count ++
+    //     }
+    // }
+    // document.write(count+'<hr>')
+
+    // Tính trung bình cộng các phần tử > 1000 trong mảng
+    let tong = 0
+    for (let i = 0; i < mang.length; i ++){
+        if (mang[i] > 1000){
+            count ++
+            tong += mang[i]
+        }
+    }
+    let tbc = tong/count
+    document.write(tbc+'<hr>')
+    document.write(Math.max(mang[i])
+
+    // Tìm max
+    let max = mang[0]
+    for (let i = 0; i < mang.length; i++) {
+        if (max < mang[i]) {
+            max = mang[i]
+        }
+    }
+    document.write(max)
+</script>
+</body>
+</html>
